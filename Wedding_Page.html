@@ -1,0 +1,244 @@
+    <!DOCTYPE html>
+    <html>
+    <body>
+<!-- External CSS -->
+    <link rel="stylesheet" href="Occasion_style.css">
+
+<!-- External JS  -->
+    <script src="Occasion_Page.js"></script>
+
+<!-- Sidebar Menu -->
+
+<!-- Include Font Awesome from CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <div class="sidebar" id="mySidebar">
+        <span class="close-btn" onclick="closeSidebar()">Close &times;</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Cupcakes</a>
+        <a href="Occasion_Page.html">Occasion</a>
+        <a href="#">Delivery</a>
+        <a href="#">View Cart</a>
+    </div>  
+<!-- Open button and page content -->
+<div class="content">
+    <button class="open-btn" onclick="openSidebar()"><i class="material-icons">menu</i></button>
+</div>
+                    <!-- JavaScript for sidebar functionality -->
+                    <script>
+                        function openSidebar() {
+                            document.getElementById("mySidebar").style.display = "block";
+                        }
+
+                        function closeSidebar() {
+                            document.getElementById("mySidebar").style.display = "none";
+                        }
+</script>
+
+<!-- websiteLogo -->
+     <div class="logo-container">
+         <img src="Toronto_Cupcake_Logo.png" alt="cupcake logo" class="logo">
+        </div>
+
+
+<!-- Wedding Header banner -->
+         <div class="wedding-hero-image">
+            <div class="wedding-hero-text">
+             <h1>Weddings</h1>
+            </div>
+        </div>
+
+<!-- Occasion Buttons -->
+    <div class="btn-group">
+        <button>Weddings</button>
+        <button>Birthdays</button>
+        <button>Themes</button>
+        <button>Anniversaries</button>
+        <button>Graduations</button>
+        <button>Holidays</button>
+        <button>Themes</button>
+        <button>Baby</button>
+        <button>Wrap</button>
+    </div>
+
+<!-- Wedding Header1 Sections -->
+    <div class="wedding-content-container1">
+   <div class="wedding-text-column1">
+      <h1> SAY YES TO <span class="second-line">THE CUPCAKE</span></h1>
+       <p>Your wedding is a day to be cherished forever, and our cupcakes are designed to add an extra layer of sweetness to the celebration. Whether you are looking for classic elegance or modern flair, we work with you to create cupcakes that match your wedding's theme and colors. From intricate floral designs to cupcakes adorned with the bride and groom's initials, every detail is customized to make your big day even more special. Let us help you create a beautiful cupcake display that complements your style, with rental stands available to ensure the presentation is as stunning as the cupcakes themselves.</p>
+
+<!-- Contact icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Icons</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="icon-row">
+        <i class="material-icons icon">phone_in_talk</i>
+        <span class="text">1-877-334-9468</span>
+        <i class="material-icons icon">email</i>
+        <span class="text">inquiry@torontocupcake.com</span>
+        <i class="material-icons icon">cake</i>
+        <span class="text">More Cupcakes</span>
+    </div>
+   </div>
+   <div class="wedding-image-column1">
+      <img src="bride_groom_cupcake.jpg" style="width:95%;" alt="bride_groom_cupcake" class="wedding-content-image1">
+   </div>
+</div>
+
+<!-- Wedding Gallery Section -->
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="wedding1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="wedding2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="wedding3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="wedding4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="wedding5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="wedding6.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="wedding1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bride and Groom">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pink Tropical Cupcakes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Elegent White Sprinkle Cupcakes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Simple Fruit Cupcakes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Funky Pastel Cupcakes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Couple Ring Cupcakes">
+    </div>
+  </div>
+</div>
+
+ <!-- Wedding Gallery JavaScript here -->
+
+                        <script>
+                         let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        // Next/previous controls
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("demo");
+                          let captionText = document.getElementById("caption");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                          captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+                        </script>
+
+<!-- Wedding Request Form Sections -->
+<div class="container">
+  <div style="text-align:center">
+    <h2>Submit your Request</h2>
+    <p>Let Us Know What You Want</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="wedding_cupakes.jpg" style="width:100%;">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="amount">Cupcake Amount</label>
+        <select id="amount" name="amount">
+          <option value="100">100pc</option>
+          <option value="50">50pc</option>
+          <option value="10">10pc</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Footer banner -->
+         <div class="footer-image">
+            <div class="footer-text">
+             <h1>Order Today!</h1>
+            </div>
+        </div>
+
+ <!-- Footer Navbar -->
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#cupcakes">Cupcakes</a>
+            <a href="#occasion" class="active">Occasion</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#view cart">View Cart</a>
+        </div>
+
+       
+    </body>
+    </html>
